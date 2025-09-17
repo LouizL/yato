@@ -1,42 +1,47 @@
 .header{
-    padding: 30px;
+    padding: 120px;
     text-align: left ;
-    background:  #dec6d4;
+    background: #dec6d4;
     color:whitesmoke;
     font-size: 12px;
 }
-
-.dropbtn {
-  background-color:  #e7e7e7;;
-  color: rgb(104, 99, 99);
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+/*posiciona a logo no cabeçalho da página*/
+.header .logo{
+  position:fixed;
+  top: 10px;
+  left: 15px;
+  width:200px;
+  height: 200px;
 }
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: left;
-  position:relative;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+/*cor de dentro da barra de pesquisa*/
+.header .BarraDePesquisa {
   display: block;
+  position: fixed;
+  left:40% ;
+  top:20%;
+  font-weight: 500;
+  border-radius: 12px;
+  text-transform: capitalize;
+  width:400px;
+  height: 3px;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  color: #a66d8e;
 }
 
-.dropdown-content a:hover {background-color: #6e6b6b;}
 
-.dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #f8aeec;}
+/*
+.header{
+  background: #f5f2f4;
+  background: #ede6ea;
+  background: #e6dae1;
+  background: #dec6d4;
+  background: #d4b4c7;
+  background: #c9a5ba;
+  background: #b38aa2;
+  background: #a66d8e;
+}
+  */
