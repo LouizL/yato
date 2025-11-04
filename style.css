@@ -1,37 +1,190 @@
+
 .header{
-    padding: 120px;
-    text-align: left ;
+    display: flex;
+    margin-top: -8px;
+    margin-left: -6px;
+    position: relative;
+    width: 101%;
+    height: 260px;
     background: #dec6d4;
-    color:whitesmoke;
-    font-size: 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 /*posiciona a logo no cabeçalho da página*/
 .header .logo{
-  position:fixed;
+  position:absolute;
   top: 10px;
   left: 15px;
-  width:200px;
-  height: 200px;
+  width:180px;
+  height: 180px;
 }
-/*cor de dentro da barra de pesquisa*/
-.header .BarraDePesquisa {
-  display: block;
-  position: fixed;
-  left:40% ;
-  top:20%;
+
+ .input-search {
+  position:relative;
+  left: 35%;
+  top:  30%;
+  display: inline-block;
+  width:500px;
+  height: 52px;
+  padding: 0 58px 0 20px;
+  font-size: 0.75rem;
   font-weight: 500;
-  border-radius: 12px;
-  text-transform: capitalize;
-  width:400px;
-  height: 3px;
-  background-color: #f8f8f8;
-  text-align: center;
-  padding: 14px 16px;
-  font-size: 17px;
+  border-radius: 6px;
   color: #a66d8e;
+  background: #f8f8f8;
+  text-transform: uppercase;
+}
+
+/* CONTEUDO REFERENTE AO MENU DROPDOWN DO HEADER */ 
+.dropdown {
+  position: relative;
+  left:-15%;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  background-color: #c9a5ba;
+  top: 200px;
+  height: 50px;
+  width: 80%;
+  border-radius: 32px;
+}
+ .dropdownmenu{
+  max-width: inherit;
+  height: 50px;
+  background-color: #c9a5ba;
+  border-radius: 32px;
+}
+.dropdownbutton  {
+  max-width: inherit;
+  background-color: #c9a5ba;
+  border:none;
+  font-size: 16px;
+  width: 140px;
+  font-family: sans-serif;
+  font-weight:bold ;
+  padding: 15px 10%;
+  border-radius: 32px;
+  color: rgb(49, 49, 49);
+}
+.dropdownmenu:hover .dropdown-content {display: block;}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdownbutton:hover {background-color:#a66d8e3f}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f5f2f4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 14px;
+}
+.dropdown-content a {
+  color: rgb(49, 49, 49);
+  font-family: sans-serif;
+  font-weight:bold ;
+  font-size: 12px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 14px
+}
+
+.container {
+  display: flex;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 70%;
+  margin: 0 auto; 
+  padding: 60px 5px;
+  gap:65px;
+  height:auto;
+}
+.container  .prod-container{
+  width:200px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 45px;
+  background-color: rgba(207, 207, 207, 0.151);
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.prod-container .foto_prod{
+  height: 250px;
+  border-width: 10px; 
+  border-style: solid; 
+  border-color: #b38aa2; 
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.tituloProduto{
+  font-family: verdana;
+  text-align: center;
+  font-size: 2.5vh;
+}
+.textoTags{
+  font-family: verdana;
+  text-align: center;
+  font-size: 1.2vh;
+  margin-top: -20px;
+  color:rgb(46, 46, 46);
+}
+.descProduto{
+  font-family: verdana;
+  text-align: center;
+  font-size: 1.5vh;
+  color:rgb(46, 46, 46);
 }
 
 
+.footer {
+  position:fixed;
+  bottom: 0%;
+  right: 0%;
+  height: 5%;
+  width: 100%;
+  background: #dec6d4;
+
+}
+.footer .rightColumn{
+  position:fixed;
+  left:2%;
+  width: 50%;
+}
+.centerColumn{
+  position:fixed;
+  left:45%;
+  width: 50%;
+}
+.footer .leftColumn{
+  position: fixed;
+  left:80%;
+  width: 50%;
+  
+}
+.footer .footerText{
+  font-family: sans-serif;
+  font-size: 24px;
+  color: rgb(49, 49, 49);
+}
+.footer .footerLink{
+  font-family: sans-serif;
+  font-size: 22px;
+  color: rgb(49, 49, 49);
+  width:30%;
+  text-align: center;
+}
+.footer .footerLink:hover {background-color: #a66d8e4f;border-radius: 8px;}
+.footer .socialIcon{
+  height: 24px;
+  width: fit-content;
+  padding: 12px 8px;
+}
+.footer .socialIcon:hover {background-color: #a66d8e4f;border-radius: 8px;}
 
 /*
 .header{
@@ -45,3 +198,5 @@
   background: #a66d8e;
 }
   */
+
+   /* Dropdown Button */
